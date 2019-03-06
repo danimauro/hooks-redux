@@ -15,7 +15,7 @@ const Details = props => {
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
     props.findCurrentItem(parseInt(props.match.params.itemId));
-  });
+  },[]);
 
   return (
     <Page
